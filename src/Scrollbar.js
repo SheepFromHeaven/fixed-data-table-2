@@ -349,7 +349,7 @@ var Scrollbar = createReactClass({
 
     this._mouseMoveTracker.captureMouseMoves(event);
     // Focus the node so it may receive keyboard event.
-    ReactDOM.findDOMNode(this).focus();
+    // ReactDOM.findDOMNode(this).focus();
   },
 
   _onMouseMove(/*number*/ deltaX, /*number*/ deltaY) {

@@ -66,7 +66,7 @@
     "test": "mocha-webpack --webpack-config webpack.config-test.js \"src/**/*-test.js\" --require build_helpers/test-globals.js",
     "test:watch": "mocha-webpack --webpack-config webpack.config-test.js --watch \"src/**/*-test.js\" --require build_helpers/test-globals.js",
     "test:server": "webpack-dev-server --config webpack.config-test.js --hot --inline",
-    "postinstall": "npm rum build-npm"
+    "postinstall": "./build_helpers/buildNPMInternals.sh"
   },
   "repository": {
     "type": "git",
